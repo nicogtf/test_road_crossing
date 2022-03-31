@@ -50,6 +50,7 @@ while game_is_on:
     add_car_after = max(add_car_after-1, 2)
 
     car_fleet.move_cars()
+
     if car_fleet.detect_collision(player):
         game_is_on = False
         final_message.write(f"Game over!\nFinal Score: {level.score}", align=alignment, font=font_settings)
